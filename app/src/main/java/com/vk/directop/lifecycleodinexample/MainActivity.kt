@@ -8,11 +8,15 @@ import android.util.Log
 private const val TAG = "MyTAg: "
 private const val VALUE_ONE: String = ""
 
+private var num: Int = 0
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Log.d(TAG, "")
+        //1
+        Log.d(TAG, "Ты видел деву на скале " +
+                "В одежде белой над волнами,")
         if (savedInstanceState != null) {
             //helloTextView.text = savedInstanceState.getString(VALUE_ONE)
         } else {
@@ -22,22 +26,30 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        Log.d(TAG, "")
+        //2
+        Log.d(TAG, "Когда, бушуя в бурной мгле, " +
+                "Играло море с берегами,")
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d(TAG, "")
+        //3
+        Log.d(TAG, "Когда луч молний озарял " +
+                "Ее всечасно блеском алым")
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d(TAG, "")
+        //4
+        Log.d(TAG, "И ветер бился и летал " +
+                "С ее летучим покрывалом?")
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d(TAG, "")
+        //5
+        Log.d(TAG, "Прекрасно море в бурной мгле " +
+                "И небо в блесках без лазури;")
     }
 
     override fun onRestart() {
@@ -47,7 +59,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d(TAG, "")
+        //6
+        Log.d(TAG, "Но верь мне: дева на скале " +
+                "Прекрасней волн, небес и бури.")
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
@@ -60,17 +74,22 @@ class MainActivity : AppCompatActivity() {
 /*
 
 вывести с помощью жизненного цикла стих из 12 строк
-
+1
 Ты видел деву на скале
 В одежде белой над волнами,
+2
 Когда, бушуя в бурной мгле,
 Играло море с берегами,
+3
 Когда луч молний озарял
 Ее всечасно блеском алым
+4
 И ветер бился и летал
 С ее летучим покрывалом?
+5
 Прекрасно море в бурной мгле
 И небо в блесках без лазури;
+6
 Но верь мне: дева на скале
 Прекрасней волн, небес и бури.
  */
