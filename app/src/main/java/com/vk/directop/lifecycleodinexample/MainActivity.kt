@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.util.Log
 
 
-private const val TAG = "MyTAg: "
+private const val TAG = "MyTag: "
 private const val VALUE_ONE: String = ""
 
 private var num: Int = 0
